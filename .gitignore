@@ -2,7 +2,7 @@
 __pycache__/
 .DS_Store
 
-data/*
+./data/*.py
 model/*.pkl
 
 notebooks/pyspark_als_recommender_clean.ipynb
