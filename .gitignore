@@ -9,6 +9,5 @@ __pycache__/
 data/
 model/
 
-notebooks/pyspark_als_recommender_clean.ipynb
 notebooks/pyspark_als_recommender.ipynb
-./notebooks/pyspark_loader.ipynb
+notebooks/pyspark_loader.ipynb
