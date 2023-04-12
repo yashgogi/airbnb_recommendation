@@ -11,3 +11,4 @@ model/
 
 notebooks/pyspark_als_recommender.ipynb
 notebooks/pyspark_loader.ipynb
+notebooks/content_based_filtering.ipynb
