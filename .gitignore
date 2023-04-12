@@ -2,8 +2,11 @@
 __pycache__/
 .DS_Store
 
-./data/*.py
-model/*.pkl
+!data/.gitkeep
+!model/.gitkeep
+
+data/
+model/
 
 notebooks/pyspark_als_recommender_clean.ipynb
 notebooks/pyspark_als_recommender.ipynb
