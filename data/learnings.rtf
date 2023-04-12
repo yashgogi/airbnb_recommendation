@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\f1\b Restart mongodb
+\f0\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 \CocoaLigature0 brew services restart mongodb/brew/mongodb-community\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b\fs24 \cf0 \CocoaLigature1 \
+Start Mongo db\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0\fs22 \cf2 \CocoaLigature0 mongosh\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b Create database\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 Use dbname\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b Upload data as table to mongodb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 mongoimport --type csv --headerline --db bdata --collection your_collection_name --file /Users/yashnagogineni/Desktop/big_data_dataset/scored_reviews.csv\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b Drop table
+\f2\b0 \
+Db.customers.drop()\
+
+\f3\b \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 mongoimport --type csv --headerline --db bdata --collection scored_reviews_bart --file /Users/yashnagogineni/Desktop/big_data_dataset/bart_score.csv\
+\
+\
+\
+mongoimport --type csv --headerline --db bdata --collection scored_reviews_updated --file /Users/yashnagogineni/Desktop/big_data_dataset/data/scored_reviews2.csv\
+\
+mongoimport --type csv --headerline --db bdata --collection listings --file /Users/yashnagogineni/Desktop/big_data_dataset/data/archive/listings.csv\
+\
+mongoimport --type csv --headerline --db bdata --collection recommend --file /Users/yashnagogineni/Desktop/big_data_dataset/results/recommend/part-00000-bc7be3c1-6651-4159-9219-ae9a25f832f4-c000.csv\
+\
+}
