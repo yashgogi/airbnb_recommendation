@@ -36,7 +36,6 @@ mkl-service
 mock
 munkres
 mypy-extensions
-navigator-updater
 nltk
 nose
 olefile
