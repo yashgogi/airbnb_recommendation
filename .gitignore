@@ -3,11 +3,11 @@ __pycache__/
 **/.DS_Store
 
 
-!data/.gitkeep
-!model/.gitkeep
+# !data/.gitkeep
+# !model/.gitkeep
 
-data/
-model/
+# data/
+# model/
 
 notebooks/pyspark_als_recommender.ipynb
 notebooks/pyspark_loader.ipynb
