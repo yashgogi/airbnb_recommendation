@@ -43,7 +43,6 @@ openpyxl
 pep8
 pip-chill
 pipenv
-pycurl
 pydocstyle
 pyhamcrest
 pyjwt
