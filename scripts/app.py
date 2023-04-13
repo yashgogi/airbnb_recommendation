@@ -21,7 +21,7 @@ def load_listing():
     Load listing table to dataframe
     '''
      # listing detail file
-    listing = pd.read_csv('./data/archive/listings.csv')
+    listing = pd.read_csv('./data/raw_data/listings.csv')
     return listing
 
 def merge_listing(recom, listing):
@@ -173,7 +173,7 @@ if __name__ == '__main__':
     # Check if user input is not empty
     if sentence:
         sent = re.sub("[^0-9]", "", sentence)
-        sent = int(sentence)
+        sent = int(sent)
         # recommend if user id exists
         if sent in reviewers:
             recommend_listing(df, listing, sent)
