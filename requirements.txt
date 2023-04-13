@@ -9,10 +9,6 @@ bottleneck
 brotlipy
 catboost
 colorama
-conda-build
-conda-repo-cli
-conda-token
-conda-verify
 contractions
 cython
 cytoolz
