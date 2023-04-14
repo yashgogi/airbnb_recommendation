@@ -95,9 +95,9 @@ def recommend_listing(df, listing, sent, n=5):
     create_popular_listings(listing)
     
 
-def create_popular_listings(df, pop=[4314054,31796,
-                                     916123,20000,
-                                     1038465]):
+def create_popular_listings(df, pop=[220676, 1936861,\
+                                     708802, 1584362,\
+                                        72811]):
     '''
     For new users create listing recommendation
     based on popular listings
